@@ -1,0 +1,101 @@
+/* Include padding and borders in an element's width */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f5fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+header, footer {
+    background-color: #214e78;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section {
+    padding: 30px 0;
+    text-align: center;
+}
+
+h2, h3 {
+    color: #214e78;
+}
+
+/* Flex puts the cards next to each other; wrap lets them move to a new row */
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.project-card {
+    flex: 1 1 240px;
+    background-color: white;
+    border-top: 4px solid #397fba;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px #ddd;
+    text-align: left;
+}
+
+.project-card h3 {
+    margin-top: 0;
+}
+
+a {
+    color: #245b91;
+    overflow-wrap: anywhere;
+}
+
+form {
+    max-width: 350px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+input, textarea, button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font: inherit;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #214e78;
+    color: white;
+    border: none;
+}
+
+.form-note {
+    font-size: 13px;
+    color: #555;
+}
